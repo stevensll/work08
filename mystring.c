@@ -8,9 +8,19 @@ int mystrlen( char *s ){
     }
     return count;
 }
-
+char * mystrcpy( char *dest, char *source ){
+    int i; 
+    for(i = 0; i < n; i++){
+        dest[i] = source[i];
+    }
+    return dest;
+}
 char * mystrncpy( char *dest, char *source, int n){
-
+    int i;
+    for(i = 0; i < n; i++){
+        dest[i] = source[i];
+    }
+    return dest;
 }
 char * mystrncat( char *dest, char *source, int n){
 
